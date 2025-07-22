@@ -114,7 +114,7 @@ hr{
   font-size: 18px;
 }
 
-.cart-badge {
+.cart-color {
   background-color: #10b981;
   color: white;
   padding: 2px 6px;
@@ -193,13 +193,17 @@ hr{
   align-items: center;
   padding: 60px 80px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  background: url(../images/images/91A0D167-6A16-4ED5-872B-CF19E86AEF5C.jpeg);
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-content .w-100 {
-  background: url(../images/images/91A0D167-6A16-4ED5-872B-CF19E86AEF5C.jpeg);
+  width: 100%;
 }
 
-.badge {
+.badge-tag {
   display: inline-block;
   background-color: #fcd34d;
   color: #111;
@@ -234,11 +238,11 @@ hr{
   text-decoration: none;
   font-weight: bold;
   border-radius: 6px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #1f2937;
+  background-color: #43464a;
 }
 
 /* Featured Categories */
@@ -256,6 +260,10 @@ hr{
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+}
+
+.category-item:hover{
+  border: 2px solid rgb(56, 176, 56);
 }
 
 .category-item {
@@ -277,42 +285,60 @@ hr{
 /* Promo Banners */
 .promo-banners {
   display: flex;
-  gap: 2px;
-  padding: 0 2px 40px;
-  
+  justify-content: space-between;
+  gap: 20px;
+  margin: 40px 0;
 }
 
-.banner-1{
+.promo-banners .banner-1,
+.promo-banners .banner-2 {
   flex: 1;
-  padding: 20px;
-  border-radius: 12px;
+  padding: 10px;
+  background-size:cover;
+  background-position: center;
+  border-radius: 10px;
+  color: #fff;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background: url(../images/images/grocery-background.jpeg);
-  background-repeat: no-repeat;
-  width: 30%;
-  height: 100vh;
+  min-height: 200px;
+  min-width: 200px;
+  position: relative;
 }
 
-.banner-2{
-  flex: 1;
-  padding: 20px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: url(../images/images/91A0D167-6A16-4ED5-872B-CF19E86AEF5C.jpeg);
-  background-repeat: no-repeat;
+.promo-banners .banner-1 {
+  background-image: url(../images/images/grocery-background.jpeg); 
+  background-color: #f3f6f5;
+  color: #000;
 }
 
-.banner h3 {
-  margin: 0 0 8px;
+.promo-banners .banner-2 {
+  background-image: url(../images/images/grocery-banner-2.jpg); 
+  background-color: #f3f3f3;
+  color: #000;
 }
 
-.banner p {
-  margin: 0 0 12px;
-  color: #6b7280;
+.promo-banners h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.promo-banners p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.promo-banners .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #313233;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.promo-banners .btn:hover {
+  background-color: #525457;
 }
 
 /* Product Grid */
@@ -326,7 +352,7 @@ hr{
 
 /* Product Card */
 .product-card {
- width: 22%;
+  width: 22%;
   margin-bottom: 20px;
   background: #fff;
   padding: 15px;
@@ -345,6 +371,17 @@ hr{
   padding: 0;
 }
 
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  z-index: 10;
+}
 
 .category {
   color: gray;
@@ -388,7 +425,178 @@ hr{
   font-size: 13px;
 }
 
+.add-btn:hover{
+  background-color: #23a97c;
+}
 
+.product-card:hover{
+  border: 2px solid rgb(31, 146, 31);
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  background-color: #fafafa;
+}
+
+.feature-box {
+  flex: 1;
+  padding: 0 16px;
+}
+
+.feature-box img {
+  width: 40px;
+  margin-bottom: 12px;
+}
+
+.feature-box h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.feature-box p {
+  font-size: 15px;
+  color: #555;
+}
+
+.footer {
+  background-color: #f1f3f2;
+  padding: 40px 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+  margin: 0 10px;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col img {
+  width: 120px;
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding-top: 16px;
+  font-size: 13px;
+  color: #666;
+}
+
+
+.site-footer {
+  background-color: #f1f3f2;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 40px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+.footer-section strong {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.payment-partners .logos img,
+.app-links .store-icons img {
+  height: 25px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.social-media {
+  text-align: right;
+}
+
+.social-media .icons button {
+  width: 40px;
+  height: 35px;
+  margin-left: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  padding: 15px 40px;
+  background-color: #f1f3f2;
+  font-size: 13px;
+  color: #555;
+}
+
+.footer-bottom a {
+  color: #28a745;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.buy-pro-btn {
+  background-color: #28a745;
+  color:white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  font-weight: 500;
+}
+
+.buy-pro-btn i {
+  margin-right: 6px;
+  color:white;
+}
+
+.buy-pro-btn:hover{
+  background-color: rgb(96, 160, 96);
+}
 
 
 

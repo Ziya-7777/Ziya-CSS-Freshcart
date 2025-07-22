@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FreshCart - Free Shipping</title>
+  <title>FreshCart - Online Store</title>
   <link rel="stylesheet" href="./css/style.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
@@ -28,7 +27,7 @@
       <div>🌐 English</div>
       <div>🤍</div>
       <div>👤</div>
-      <div>🛒 <span class="cart-badge">5</span></div>
+      <div>🛒 <span class="cart-color">5</span></div>
     </div>
   </header>
 
@@ -61,10 +60,10 @@
    <hr>
   <section class="hero-section">
     <div class="hero-content">
-      <span class="badge">Free Shipping - orders over $100</span>
+      <span class="badge-tag">Free Shipping - orders over $100</span>
       <h1>Free Shipping on orders over <span class="highlight">$100</span></h1>
       <p>Free Shipping to First-Time Customers Only. After promotions and discounts are applied.</p>
-      <a href="#" class="btn">Show Now →</a>
+      <a href="javascript:void(0)" class="btn">Show Now →</a>
     </div>
   </section>
   
@@ -106,14 +105,14 @@
     <div>
       <h3>Fruits & Vegetables</h3>
       <p>Get Upto 30% Off</p>
-      <a href="#" class="btn">Shop Now</a>
+      <a href="javascript:void(0)" class="btn">Shop Now</a>
     </div>
  </div>
   <div class="banner-2">
     <div>
       <h3>Freshly Baked Buns</h3>
       <p>Get Upto 25% Off</p>
-      <a href="#" class="btn">Shop Now</a>
+      <a href="javascript:void(0)" class="btn">Shop Now</a>
     </div>
   </div>
 </section>
@@ -123,7 +122,7 @@
   <main class="product-grid">
     <!-- Product Card -->
     <div class="product-card">
-       <img src="./images/images/bhujiya_sev_1.jpg.webp" alt="Haldiram's Sev Bhujia" width="200px">
+     <img src="./images/images/bhujiya_sev_1.jpg.webp" alt="Haldiram's Sev Bhujia" width="200px">
       <p class="category">Snack & Munchies</p>
       <h3>Haldiram's Sev Bhujia</h3>
       <div class="price">
@@ -276,136 +275,146 @@
   <div class="rating">⭐⭐⭐⭐ 4.3 (4)</div>
   <button class="add-btn">+ Add</button>
 </div>
+ </main>
+<hr>
+ <section class="features">
+  <div class="feature-box">
+    <img src="./images/images/clock.svg" alt="Fast Delivery">
+    <h4>10 minute grocery now</h4>
+    <p>Get your order delivered to your doorstep at the earliest from FreshCart pickup stores near you.</p>
+  </div>
+  <div class="feature-box">
+    <img src="./images/images/gift.svg" alt="Best Prices">
+    <h4>Best Prices & Offers</h4>
+    <p>Cheaper prices than your local supermarket, great cashback offers to top it off.</p>
+  </div>
+  <div class="feature-box">
+    <img src="./images/images/package.svg" alt="Assortment">
+    <h4>Wide Assortment</h4>
+    <p>Choose from 5000+ products across food, personal care, household, and more.</p>
+  </div>
+  <div class="feature-box">
+    <img src="./images/images/refresh-cw.svg" alt="Returns">
+    <h4>Easy Returns</h4>
+    <p>Not satisfied with a product? Return it at the doorstep & get a refund within hours.</p>
+  </div>
+</section>
 
-  </main>
-
-  <footer class="bg-gray-50 text-gray-700 pt-10">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <!-- Top features section -->
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 border-b border-gray-200 pb-10">
-      <div class="flex items-start space-x-3">
-        <div class="text-green-600 text-2xl">⏱️</div>
-        <div>
-          <h4 class="font-semibold">10 minute grocery now</h4>
-          <p class="text-sm text-gray-600">Get your order delivered to your doorstep at the earliest from FreshCart pickup stores near you.</p>
-        </div>
-      </div>
-      <div class="flex items-start space-x-3">
-        <div class="text-green-600 text-2xl">🎁</div>
-        <div>
-          <h4 class="font-semibold">Best Prices & Offers</h4>
-          <p class="text-sm text-gray-600">Cheaper prices than your local supermarket, great cashback offers to top it off. Get best prices & offers.</p>
-        </div>
-      </div>
-      <div class="flex items-start space-x-3">
-        <div class="text-green-600 text-2xl">📦</div>
-        <div>
-          <h4 class="font-semibold">Wide Assortment</h4>
-          <p class="text-sm text-gray-600">Choose from 5000+ products across food, personal care, household, bakery, veg and non-veg & other categories.</p>
-        </div>
-      </div>
-      <div class="flex items-start space-x-3">
-        <div class="text-green-600 text-2xl">🔄</div>
-        <div>
-          <h4 class="font-semibold">Easy Returns</h4>
-          <p class="text-sm text-gray-600">Not satisfied with a product? Return it at the doorstep & get a refund within hours. No questions asked <a href="#" class="text-green-600 underline">policy</a>.</p>
-        </div>
+<footer class="footer">
+  <div class="footer-links">
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <ul>
+        <li>Vegetables & Fruits</li>
+        <li>Breakfast & instantfood</li>
+        <li>Bakery & Biscuits</li>
+        <li>Atta,Rice & Dal</li>
+        <li>Sauces & Spreads</li>
+        <li>Oraganic & gourment</li>
+        <li>Baby care</li>
+        <li>Cleaning essentials</li>
+        <li>Personal care</li>
+      </ul>
+      <ul class="flex">
+        <li>Dairy, Bread & eggs</li>
+        <li>Cold Drinks & juices</li>
+        <li>Tea , Coffee & drinks</li>
+        <li>Masala , oil & more</li>
+        <li>Chicken , meat & Fish</li>
+        <li>Paan corner</li>
+        <li>Pharma & wellness</li>
+        <li>Home & office</li>
+        <li>Pet care</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Get to know us</h4>
+      <ul>
+        <li>Company</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Help Center</li>
+        <li>Our Value</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>For Consumers</h4>
+      <ul>
+        <li>Payments</li>
+        <li>Shipping</li>
+        <li>Product Returns</li>
+        <li>FAQ</li>
+        <li>Shop Checkout</li>
+      </ul>
+    </div>
+     <div class="footer-col">
+      <h4>Become a Shopper</h4>
+      <ul>
+        <li>Shopper Opurtunities</li>
+        <li>Become a Shopper</li>
+        <li>Earnings</li>
+        <li>Ideas & Guides</li>
+        <li>New Retailers</li>
+      </ul>
+    </div>
+     <div class="footer-col">
+      <h4>Freshcart programs</h4>
+      <ul>
+        <li>Freshcart programs</li>
+        <li>Gift cards</li>
+        <li>Promos & coupons</li>
+        <li>Freshcart Ads</li>
+        <li>Careers</li>
+      </ul>
+    </div>
+   
+<footer class="site-footer">
+  <div class="footer-top">
+    <!-- Payment Partners -->
+    <div class="footer-section payment-partners">
+      <strong>Payment Partners</strong>
+      <div class="logos">
+        <img src="./images/images/amazonpay-1.svg" alt="Amazon Pay">
+        <img src="./images/images/american-express.svg" alt="American Express">
+        <img src="./images/images/mastercard.svg" alt="MasterCard">
+        <img src="./images/images/paypal.svg" alt="PayPal">
+        <img src="./images/images/visa.svg" alt="Visa">
       </div>
     </div>
 
-    <!-- Main footer links -->
-    <div class="grid grid-cols-2 md:grid-cols-6 gap-6 py-10 text-sm">
-      <div>
-        <h5 class="font-semibold mb-3">Categories</h5>
-        <ul class="space-y-2">
-          <li>Vegetables & Fruits</li>
-          <li>Breakfast & instant food</li>
-          <li>Bakery & Biscuits</li>
-          <li>Atta, rice & dal</li>
-          <li>Sauces & spreads</li>
-          <li>Organic & gourmet</li>
-          <li>Baby care</li>
-          <li>Cleaning essentials</li>
-          <li>Personal care</li>
-        </ul>
-      </div>
-      <div>
-        <ul class="space-y-2 mt-8 md:mt-0">
-          <li>Dairy, bread & eggs</li>
-          <li>Cold drinks & juices</li>
-          <li>Tea, coffee & drinks</li>
-          <li>Masala, oil & more</li>
-          <li>Chicken, meat & fish</li>
-          <li>Paan corner</li>
-          <li>Pharma & wellness</li>
-          <li>Home & office</li>
-          <li>Pet care</li>
-        </ul>
-      </div>
-      <div>
-        <h5 class="font-semibold mb-3">Get to know us</h5>
-        <ul class="space-y-2">
-          <li>Company</li>
-          <li>About</li>
-          <li>Blog</li>
-          <li>Help Center</li>
-          <li>Our Value</li>
-        </ul>
-      </div>
-      <div>
-        <h5 class="font-semibold mb-3">For Consumers</h5>
-        <ul class="space-y-2">
-          <li>Payments</li>
-          <li>Shipping</li>
-          <li>Product Returns</li>
-          <li>FAQ</li>
-          <li>Shop Checkout</li>
-        </ul>
-      </div>
-      <div>
-        <h5 class="font-semibold mb-3">Become a Shopper</h5>
-        <ul class="space-y-2">
-          <li>Shopper Opportunities</li>
-          <li>Become a Shopper</li>
-          <li>Earnings</li>
-          <li>Ideas & Guides</li>
-          <li>New Retailers</li>
-        </ul>
-      </div>
-      <div>
-        <h5 class="font-semibold mb-3">Freshcart programs</h5>
-        <ul class="space-y-2">
-          <li>Freshcart programs</li>
-          <li>Gift Cards</li>
-          <li>Promos & Coupons</li>
-          <li>Freshcart Ads</li>
-          <li>Careers</li>
-        </ul>
+    <!-- App Stores -->
+    <div class="footer-section app-links">
+      <strong>Get deliveries with FreshCart</strong>
+      <div class="store-icons">
+        <img src="./images/images/appstore-btn.svg" alt="App Store">
+        <img src="./images/images/googleplay-btn.svg" alt="Google Play">
       </div>
     </div>
 
-    <!-- Footer bottom section -->
-    <div class="flex flex-col md:flex-row justify-between items-center border-t border-gray-200 pt-6 pb-4 text-sm">
-      <div class="flex items-center space-x-4">
-        <span>Payment Partners</span>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Amazon_Pay_logo.svg" alt="Amazon Pay" class="h-5">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Paypal_2014_logo.png" alt="PayPal" class="h-5">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" class="h-5">
-      </div>
-      <div class="mt-4 md:mt-0">
-        <span class="mr-2">Get deliveries with FreshCart</span>
-        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Available_on_the_App_Store_%28black%29.png" alt="App Store" class="h-6 inline"></a>
-        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="h-6 inline"></a>
+    <!-- Social Media -->
+    <div class="footer-section social-media">
+      <span>Follow us on</span>
+      <div class="icons">
+        <button><i class="fab fa-facebook-f"></i></button>
+        <button><i class="fab fa-x-twitter"></i></button>
+        <button><i class="fab fa-instagram"></i></button>
       </div>
     </div>
+  </div>
 
-    <!-- Footer bottom note -->
-    <div class="text-center text-xs text-gray-500 mt-6">
-      © 2025 FreshCart TailwindCSS eCommerce HTML Template. Powered by <a href="https://codescandy.com" class="text-green-600">Codescandy</a>.
-    </div>
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>
+      © 2025 FreshCart TailwindCSS eCommerce HTML Template. Powered by Codescandy .
+      <a href="https://codescandy.com" target="_blank">Codescandy</a>.
+    </p>
+    <a href="#" class="buy-pro-btn">
+      <i class="fas fa-shopping-cart"> Buy Pro</i> 
+    </a>
   </div>
 </footer>
 
 
+
 </body>
-</html>
+</html>  
